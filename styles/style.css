@@ -177,7 +177,7 @@ header {
 }
   
 /* Write your CSS below */
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 480px) and (max-width: 759px) {
   .navbar {
     flex-direction: column;
   }
@@ -207,5 +207,24 @@ header {
 
   .article {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    width: 25%;
+  }
+
+  .article {
+    width: 45%;
+    margin-bottom: 5vh;
+  }
+
+  @media screen and (max-width: 479) {
+    
   }
 }
